@@ -25,6 +25,7 @@ module.exports = {
 		stats: 'errors-only',
 		liveReload: true
 	},
+	// console.log 제거
 	optimization: {
 		minimizer: webpackMode === 'production' ? [
 			new TerserPlugin({
@@ -77,7 +78,7 @@ module.exports = {
 	plugins: [
 		new webpack.BannerPlugin({
 			banner: `
-				LICENSE.txt에 출력할 내용
+				테스트입니다 !
 			`
 		}),
 		new HtmlWebpackPlugin({
